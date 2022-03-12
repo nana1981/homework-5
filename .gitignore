@@ -1,4 +1,4 @@
-# Object fil.idea
+.idea
 *.o
 build
 # Ada Library Information
