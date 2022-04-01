@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 
 public class elitelectronics extends runner {
 
-    @Test (enabled = false)
+    @Test
     public void test1(){
     $ (byText("რეგისტრაცია")).click();
     Assert.assertTrue($(byText("რეგისტრაცია")).isDisplayed());
@@ -32,7 +32,7 @@ public class elitelectronics extends runner {
     Assert.assertTrue($(byAttribute("id","singup")).isEnabled());
 }
 
-    @Test (enabled = false)
+    @Test
     public void test2 (){
         $ (byText("რეგისტრაცია")).click();
         Assert.assertTrue($(byText("რეგისტრაცია")).isDisplayed());
@@ -78,7 +78,7 @@ public class elitelectronics extends runner {
     }
 
 
-    @Test (enabled = false)
+    @Test
     public void test3 (){
         $ (".cart").click();
         $ (byText("კალათა ცარიელია"));
@@ -94,7 +94,7 @@ public class elitelectronics extends runner {
 
     }
 
-    @Test (enabled = false)
+    @Test
     public void  test4 (){
         $ (".cart").click();
         $ (byText("კალათა ცარიელია")).shouldBe(Condition.visible, Duration.ofMillis(3000));
